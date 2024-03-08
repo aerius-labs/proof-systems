@@ -26,10 +26,10 @@ type BaseSponge = DefaultFqSponge<VestaParameters, SpongeParams>;
 type ScalarSponge = DefaultFrSponge<Fp, SpongeParams>;
 
 pub struct BenchmarkCtx {
-    num_gates: usize,
-    group_map: BWParameters<VestaParameters>,
-    index: ProverIndex<Vesta, OpeningProof<Vesta>>,
-    verifier_index: VerifierIndex<Vesta, OpeningProof<Vesta>>,
+    pub num_gates: usize,
+    pub group_map: BWParameters<VestaParameters>,
+    pub index: ProverIndex<Vesta, OpeningProof<Vesta>>,
+    pub verifier_index: VerifierIndex<Vesta, OpeningProof<Vesta>>,
 }
 
 impl BenchmarkCtx {
